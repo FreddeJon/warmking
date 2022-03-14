@@ -7,40 +7,30 @@ export const Header = ({
   showNavbar,
   onNavMenuClick,
 }) => {
+  const links = [
+    { title: "Home" },
+    { title: "Products" },
+    { title: "Prices" },
+    { title: "Contact" },
+    { title: "Privacy" },
+  ];
+
   return (
     <header className="header">
       <div className="header-logo">
         Warmking
         <box-icon name="home"></box-icon>
       </div>
-      <input type="checkbox" id="nav-toggle" />
       <nav className="header-nav">
         <ul id={showNavbar ? "display-nav" : ""}>
-          <HeaderMenuItem
-            title="Home"
-            activePage={activePage}
-            onMenuClick={onMenuClick}
-          />
-          <HeaderMenuItem
-            title="Products"
-            activePage={activePage}
-            onMenuClick={onMenuClick}
-          />
-          <HeaderMenuItem
-            title="Prices"
-            activePage={activePage}
-            onMenuClick={onMenuClick}
-          />
-          <HeaderMenuItem
-            title="Contact"
-            activePage={activePage}
-            onMenuClick={onMenuClick}
-          />
-          <HeaderMenuItem
-            title="Privacy"
-            activePage={activePage}
-            onMenuClick={onMenuClick}
-          />
+          {links.map(({ title }, i) => (
+            <HeaderMenuItem
+              key={i}
+              title={title}
+              activePage={activePage}
+              onMenuClick={onMenuClick}
+            />
+          ))}
         </ul>
       </nav>
       <div className="header-mobile-menu">

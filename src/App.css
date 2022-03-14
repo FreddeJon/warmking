@@ -9,6 +9,7 @@ img {
 }
 
 :root {
+  --boxshadow: box-shadow: 0px 10px 13px -7px #000000, 0px 1px 7px -5px rgba(0,0,0,0);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -28,7 +29,8 @@ body {
 .header {
   grid-area: header;
   height: 60px;
-  position: relative;
+  position: sticky;
+  top: 0;
   display: grid;
   grid-template-areas: "logo links";
   grid-template-columns: 150px calc(100% - 150px);
@@ -44,9 +46,6 @@ body {
   margin-right: auto;
 }
 
-#nav-toggle {
-  display: none;
-}
 .header-mobile-menu {
   display: none;
   margin-left: auto;
@@ -82,9 +81,20 @@ Main content start
 */
 
 .main-content {
+  padding: 10px 100px;
   min-height: calc(80vh - 60px);
   grid-area: main;
 }
+
+.products-container{
+  display: flex;
+}
+
+/* Privacy Page Start */
+.privacy-page-container li {
+  margin-left: 15px;
+}
+/* Privacy Page END */
 
 /* Responsive */
 @media only screen and (max-width: 1000px) {
@@ -122,13 +132,6 @@ Main content start
     display: none;
     width: 100%;
   }
-
-  .header input[type="checkbox"]:checked ~ .header-nav ul {
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-    margin: 0 auto;
-  }
   .header-mobile-menu {
     grid-area: links;
     display: block;
@@ -139,5 +142,8 @@ Main content start
     flex-direction: column;
     line-height: 40px;
     margin: 0 auto;
+  }
+  .main-content{
+    padding: 10px 20px;
   }
 }
