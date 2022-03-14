@@ -6,6 +6,7 @@ export const HeaderMenuItem = ({ title, activePage, onMenuClick }) => {
     <li>
       <a
         onClick={() => onMenuClick(title)}
+        href={`#${title}`}
         className={`header-nav-link ${activePage === title ? "active" : ""}`}
       >
         {title}

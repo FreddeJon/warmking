@@ -1,7 +1,12 @@
 import React from "react";
 import { HeaderMenuItem } from "./HeaderMenuItem";
 
-export const Header = ({ activePage, onMenuClick }) => {
+export const Header = ({
+  activePage,
+  onMenuClick,
+  showNavbar,
+  onNavMenuClick,
+}) => {
   return (
     <header className="header">
       <div className="header-logo">
@@ -10,7 +15,7 @@ export const Header = ({ activePage, onMenuClick }) => {
       </div>
       <input type="checkbox" id="nav-toggle" />
       <nav className="header-nav">
-        <ul>
+        <ul id={showNavbar ? "display-nav" : ""}>
           <HeaderMenuItem
             title="Home"
             activePage={activePage}
@@ -39,7 +44,10 @@ export const Header = ({ activePage, onMenuClick }) => {
         </ul>
       </nav>
       <div className="header-mobile-menu">
-        <label htmlFor="nav-toggle">Menu</label>
+        <box-icon
+          onClick={() => onNavMenuClick(!showNavbar)}
+          name={showNavbar ? "x" : "menu"}
+        ></box-icon>
       </div>
     </header>
   );

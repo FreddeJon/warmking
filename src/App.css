@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +11,22 @@ img {
 :root {
 }
 body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "main";
+
+  grid-template-rows: 60px auto 40px;
+
   width: 100%;
   height: 100%;
   font-size: 20px;
 }
 /* Header and Navigation START */
 .header {
+  grid-area: header;
   height: 60px;
   position: relative;
   display: grid;
@@ -57,6 +68,7 @@ body {
   color: inherit;
   padding: 0.1rem 1rem 0.4rem;
   border-radius: 4px;
+  text-decoration: none;
 }
 .header-nav ul .header-nav-link:hover {
   background-color: rgb(238, 238, 238);
@@ -65,9 +77,13 @@ body {
 .header-nav ul .header-nav-link.active {
   font-weight: bold;
 }
-/* Header and Navigation END */
+/* Header and Navigation END 
+Main content start
+*/
 
 .main-content {
+  min-height: calc(80vh - 60px);
+  grid-area: main;
 }
 
 /* Responsive */
@@ -81,7 +97,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .header {
     background-color: red;
   }
@@ -90,7 +106,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .header {
     background-color: blue;
     display: flex;
@@ -116,5 +132,12 @@ body {
   .header-mobile-menu {
     grid-area: links;
     display: block;
+  }
+
+  #display-nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    margin: 0 auto;
   }
 }
