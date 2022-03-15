@@ -12,10 +12,14 @@ const nearestThousand = (num) => {
 const getData = () => {
   const arr = [];
   for (let i = 0; i < 100; i++) {
+    let newPrice = nearestThousand(getRandom(4000, 30000));
+    let installationPrice = nearestThousand(getRandom(4000, 30000));
     const newProd = {
       id: i,
       rating: getRandom(1, 5),
-      price: nearestThousand(getRandom(3000, 30000)),
+      price: newPrice,
+      installationCost: installationPrice,
+      totalCost: newPrice + installationPrice,
       name:
         firstWord[getRandom(0, firstWord.length - 1)] +
         " " +

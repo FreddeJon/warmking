@@ -19,7 +19,7 @@ export const Header = ({
     <header className="header">
       <div className="header-logo">
         Warmk&#x131;ng
-        <i class="bx bxs-hot header-logo-icon-flame"></i>
+        <i className="bx bxs-hot header-logo-icon-flame"></i>
         <i className="bx bx-home header-logo-icon-house"></i>
       </div>
       <nav className="header-nav">

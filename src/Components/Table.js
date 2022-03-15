@@ -14,8 +14,14 @@ const columns = [
     sortable: true,
   },
   {
-    name: "Rating",
-    selector: (row) => row.rating + "/5",
+    name: "Installation",
+    hide: "sm",
+    selector: (row) => row.installationCost,
+    sortable: true,
+  },
+  {
+    name: "Total",
+    selector: (row) => row.totalCost,
     sortable: true,
   },
 ];
@@ -26,7 +32,6 @@ export const Table = () => {
   return (
     <DataTable
       pagination
-      fixedHeader
       highlightOnHover
       responsive
       pointerOnHover

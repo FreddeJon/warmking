@@ -16,7 +16,7 @@ img {
   --fireorange-color: #ca5a0f;
 }
 body {
-  background: url(../public/images/matthias-neufeld-_ijgfgEghM0-unsplash.jpg);
+  background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
   background-attachment: fixed;
   background-position: center;
   font-family: "Poppins", sans-serif;
@@ -45,7 +45,7 @@ body {
   grid-template-columns: 200px calc(100% - 200px);
   align-content: center;
   justify-content: space-around;
-  box-shadow: 0 2px 10px 0 #000000;
+  box-shadow: 1px 1px 3px rgb(49, 49, 49);
 }
 .header .header-logo {
   grid-area: logo;
@@ -228,6 +228,49 @@ Privacy Page START */
 .news-card-more:hover {
   background-color: var(--fireorange-color);
 }
+
+/* Contact Page START */
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-areas:
+    "name email"
+    "errand errand"
+    "message message"
+    "button button";
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: var(--border);
+}
+.contact-form .form-name {
+  grid-area: name;
+}
+.contact-form .form-email {
+  grid-area: email;
+}
+.contact-form .form-errand {
+  grid-area: errand;
+}
+.contact-form .form-message {
+  grid-area: message;
+  resize: none;
+}
+.contact-form .form-submit {
+  grid-area: button;
+  padding: 5px 10px;
+  width: 100px;
+  margin: 0 20px 0 auto;
+}
+/* Contact Page END */
 /* Footer START */
 .footer {
   color: white;
@@ -279,6 +322,14 @@ Privacy Page START */
     display: block;
   }
 
+  .contact-form {
+    grid-template-areas:
+      "name"
+      "email"
+      "errand"
+      "message"
+      "button";
+  }
   #display-nav {
     background-color: var(--dark-color);
     display: flex;
@@ -312,6 +363,7 @@ Privacy Page START */
     top: 60%;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .product-card-price {
     top: 50%;
