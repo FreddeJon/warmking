@@ -9,6 +9,12 @@ const columns = [
     sortable: true,
   },
   {
+    name: "Rating",
+    hide: "md",
+    selector: (row) => row.rating + "/5",
+    sortable: true,
+  },
+  {
     name: "Price",
     selector: (row) => row.price,
     sortable: true,
