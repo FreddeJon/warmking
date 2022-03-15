@@ -1,9 +1,9 @@
 import React from "react";
-import { Contact } from "./Pages/Contact";
-import { Home } from "./Pages/Home";
-import { Prices } from "./Pages/Prices";
-import { Privacy } from "./Pages/Privacy";
-import { Products } from "./Pages/Products";
+import { Contact } from "../Pages/Contact";
+import { Home } from "../Pages/Home";
+import { Prices } from "../Pages/Prices";
+import { Privacy } from "../Pages/Privacy";
+import { Products } from "../Pages/Products";
 
 export const Main = ({ activePage }) => {
   return (
