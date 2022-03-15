@@ -18,8 +18,9 @@ export const Header = ({
   return (
     <header className="header">
       <div className="header-logo">
-        Warmking
-        <box-icon name="home"></box-icon>
+        Warmk&#x131;ng
+        <i class="bx bxs-hot header-logo-icon-flame"></i>
+        <i className="bx bx-home header-logo-icon-house"></i>
       </div>
       <nav className="header-nav">
         <ul id={showNavbar ? "display-nav" : ""}>
@@ -34,10 +35,10 @@ export const Header = ({
         </ul>
       </nav>
       <div className="header-mobile-menu">
-        <box-icon
+        <i
           onClick={() => onNavMenuClick(!showNavbar)}
-          name={showNavbar ? "x" : "menu"}
-        ></box-icon>
+          className={showNavbar ? "bx bx-x" : "bx bx-menu"}
+        ></i>
       </div>
     </header>
   );

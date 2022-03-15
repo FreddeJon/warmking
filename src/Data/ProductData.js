@@ -1,5 +1,5 @@
 const firstWord = ["Super", "Budget", "Hero", "King", "Great"];
-const secondWord = ["Japanese", "Health", "NoFog", "Heater"];
+const secondWord = ["Edition", "Health", "NoFog", "Heater"];
 
 const getRandom = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;

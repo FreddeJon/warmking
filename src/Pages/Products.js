@@ -6,7 +6,7 @@ export const Products = () => {
   const [products] = useState(getData());
   return (
     <section>
-      <h1 className="products-title">Products</h1>
+      <h1 className="title">Products</h1>
       <div className="products-container">
         {products.map((product, i) => (
           <Product key={i} product={product} />

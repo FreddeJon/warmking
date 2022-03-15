@@ -1,5 +1,11 @@
-import React from "react";
+import { Table } from "../Components/Table";
 
 export const Prices = () => {
-  return <div>Prices</div>;
+  return (
+    <section>
+      <h1 className="title">Prices</h1>
+
+      <Table />
+    </section>
+  );
 };
