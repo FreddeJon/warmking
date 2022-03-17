@@ -10,7 +10,7 @@ const HeaderProvider = ({ children }) => {
 
   const updateActivePage = (page) => {
     setActivePage(page);
-    setShowNav(!showNav);
+    setShowNav(false);
   };
 
   return (
