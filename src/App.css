@@ -234,13 +234,18 @@ Privacy Page START */
   background-color: var(--fireorange-color);
 }
 
-/* HOME PAGE SHOW 1 NEWS */
+/* 
+HOME PAGE SHOW 1 NEWS */
 .go-back {
   font-size: 66px;
   color: var(--fireorange-color);
   width: fit-content;
   display: block;
   margin-left: auto;
+  transition: all ease 0.3s;
+}
+.go-back:hover {
+  transform: translateX(-10px);
 }
 .full-news-header {
   display: flex;
