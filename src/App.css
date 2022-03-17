@@ -21,9 +21,6 @@ html {
   user-select: none;
 }
 body {
-  position: relative;
-  /* background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
- */
   background: rgb(222, 109, 34);
   background: linear-gradient(
     180deg,
@@ -54,7 +51,6 @@ body {
   box-shadow: 1px 1px 3px rgb(49, 49, 49);
 }
 .header .header-logo {
-  grid-area: logo;
   font-size: 30px;
   letter-spacing: 5px;
   width: 100%;
@@ -84,7 +80,6 @@ body {
 .header-nav {
   margin-left: -300px;
   margin-top: 7px;
-  grid-area: links;
   display: flex;
   justify-content: center;
 }
@@ -195,11 +190,12 @@ Privacy Page START */
 /* Privacy Page END
  News Card START*/
 .news-card {
+  max-width: 700px;
   position: relative;
-  margin: 1rem 0;
+  margin: 1rem auto;
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: var(--boxshadow);
+  /* box-shadow: var(--boxshadow); */
 }
 
 .news-card-header {
@@ -238,6 +234,32 @@ Privacy Page START */
   background-color: var(--fireorange-color);
 }
 
+/* HOME PAGE SHOW 1 NEWS */
+.go-back {
+  font-size: 66px;
+  color: var(--fireorange-color);
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+}
+.full-news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: var(--border);
+  padding-bottom: 10px;
+}
+.full-news-title {
+  display: inline;
+  font-weight: 400;
+}
+
+.full-news-date {
+  font-size: 16px;
+}
+.full-news-text {
+  padding: 30px 30px 30px 0px;
+}
 /* Contact Page START */
 
 .contact-form {
@@ -297,7 +319,7 @@ Privacy Page START */
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .header-nav {
     margin-left: -100px;
   }
@@ -315,7 +337,7 @@ Privacy Page START */
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   .header {
     display: flex;
     align-items: center;
