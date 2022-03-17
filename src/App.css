@@ -16,7 +16,15 @@ img {
   --fireorange-color: #ca5a0f;
 }
 body {
-  background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
+  /* background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
+ */
+  background: rgb(222, 109, 34);
+  background: linear-gradient(
+    173deg,
+    rgba(222, 109, 34, 1) 0%,
+    rgba(161, 63, 6, 1) 50%,
+    rgba(191, 120, 19, 1) 100%
+  );
   background-attachment: fixed;
   background-position: center;
   font-family: "Poppins", sans-serif;
@@ -107,10 +115,11 @@ Main content start
 */
 
 .main-content {
+  box-shadow: var(--boxshadow);
   background-color: white;
   margin: 0 auto;
   padding: 0 20px 30px;
-  max-width: 900px;
+  max-width: 1200px;
   min-height: calc(100vh - 80px - 100px);
   grid-area: main;
 }
@@ -282,6 +291,13 @@ Privacy Page START */
 /* Footer END */
 
 /* Responsive */
+
+@media only screen and (max-width: 1500px) {
+  .main-content {
+    max-width: 900px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .header-nav {
     margin-left: -100px;

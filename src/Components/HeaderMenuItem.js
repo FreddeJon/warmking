@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { HeaderContext } from "../Contexts/HeaderContext";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-export const HeaderMenuItem = ({ title, activePage, onMenuClick }) => {
+export const HeaderMenuItem = ({ title }) => {
+  const { activePage, setActivePage } = useContext(HeaderContext);
   return (
     <li>
       <a
-        onClick={() => onMenuClick(title)}
+        onClick={() => {
+          setActivePage(title);
+        }}
         href={`#${title}`}
-        className={`header-nav-link ${activePage === title ? "active" : ""}`}
+        className={`header-nav-link ${activePage === title && "active"}`}
       >
         {title}
       </a>
