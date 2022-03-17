@@ -16,6 +16,7 @@ img {
   --fireorange-color: #ca5a0f;
 }
 body {
+  position: relative;
   /* background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
  */
   background: rgb(222, 109, 34);
@@ -28,26 +29,18 @@ body {
   background-attachment: fixed;
   background-position: center;
   font-family: "Poppins", sans-serif;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-
-  grid-template-rows: 80px auto 100px;
   overflow-y: scroll;
   height: 100vh;
   font-size: 20px;
 }
 /* Header and Navigation START */
 .header {
-  grid-area: header;
   height: 80px;
   background-color: var(--dark-color);
   color: white;
   position: sticky;
+  top: 0px;
   z-index: 1;
-  top: 0;
   display: grid;
   grid-template-areas: "logo links";
   grid-template-columns: 200px calc(100% - 200px);
@@ -121,7 +114,6 @@ Main content start
   padding: 0 20px 30px;
   max-width: 1200px;
   min-height: calc(100vh - 80px - 100px);
-  grid-area: main;
 }
 
 .title {
@@ -283,7 +275,6 @@ Privacy Page START */
 /* Footer START */
 .footer {
   color: white;
-  grid-area: footer;
   background-color: var(--dark-color);
   padding: 2rem;
   height: 100px;
