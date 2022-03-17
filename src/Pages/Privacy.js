@@ -15,7 +15,7 @@ export const Privacy = () => {
         We use Your Personal data to provide and improve the Service. By using
         the Service, You agree to the collection and use of information in
         accordance with this Privacy Policy. This Privacy Policy has been
-        created with the help of the
+        created with the help of the &nbsp;
         <a
           rel="noreferrer"
           href="https://www.privacypolicies.com/blog/privacy-policy-template/"
@@ -100,12 +100,13 @@ export const Privacy = () => {
         <li>
           <p>
             <strong>Website</strong> refers to Warmking Page, accessible from
+            &nbsp;
             <a
-              href="https://immense-temple-16868.herokuapp.com/products"
+              href="https://warmking.herokuapp.com"
               target="_blank"
               rel="noreferrer"
             >
-              https://immense-temple-16868.herokuapp.com/products
+              https://warmking.herokuapp.com
             </a>
           </p>
         </li>
@@ -182,7 +183,7 @@ export const Privacy = () => {
           Flash Cookies are not managed by the same browser settings as those
           used for Browser Cookies. For more information on how You can delete
           Flash Cookies, please read &quot;Where can I change the settings for
-          disabling, or deleting local shared objects?&quot; available at
+          disabling, or deleting local shared objects?&quot; available at &nbsp;
           <a
             href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
             rel="noreferrer"
@@ -205,7 +206,7 @@ export const Privacy = () => {
         Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
         Persistent Cookies remain on Your personal computer or mobile device
         when You go offline, while Session Cookies are deleted as soon as You
-        close Your web browser. Learn more about cookies:
+        close Your web browser. Learn more about cookies:&nbsp;
         <a
           href="https://www.privacypolicies.com/blog/privacy-policy-template/#Use_Of_Cookies_Log_Files_And_Tracking"
           target="_blank"

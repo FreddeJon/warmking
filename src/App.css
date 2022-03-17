@@ -18,6 +18,7 @@ img {
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 body {
   position: relative;
@@ -25,10 +26,10 @@ body {
  */
   background: rgb(222, 109, 34);
   background: linear-gradient(
-    173deg,
-    rgba(222, 109, 34, 1) 0%,
+    180deg,
+    var(--fireorange-color) 0%,
     rgba(161, 63, 6, 1) 50%,
-    rgba(191, 120, 19, 1) 100%
+    var(--orange-color) 100%
   );
   background-attachment: fixed;
   background-position: center;
@@ -47,7 +48,7 @@ body {
   z-index: 1;
   display: grid;
   grid-template-areas: "logo links";
-  grid-template-columns: 200px calc(100% - 200px);
+  grid-template-columns: 300px calc(100% - 300px);
   align-content: center;
   justify-content: space-around;
   box-shadow: 1px 1px 3px rgb(49, 49, 49);
@@ -55,6 +56,7 @@ body {
 .header .header-logo {
   grid-area: logo;
   font-size: 30px;
+  letter-spacing: 5px;
   width: 100%;
   margin-left: 50px;
   margin-right: auto;
@@ -63,7 +65,7 @@ body {
 .header-logo-icon-flame {
   position: absolute;
   top: 3px;
-  left: 104px;
+  left: 129px;
   font-size: 14px;
   color: var(--fireorange-color);
 }
@@ -80,7 +82,8 @@ body {
 }
 
 .header-nav {
-  margin-left: -200px;
+  margin-left: -300px;
+  margin-top: 7px;
   grid-area: links;
   display: flex;
   justify-content: center;
@@ -122,6 +125,7 @@ Main content start
 
 .title {
   color: var(--orange-color);
+  letter-spacing: 5px;
   font-size: 36px;
   font-weight: 500;
   padding: 30px 0 10px;
