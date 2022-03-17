@@ -10,7 +10,7 @@ export const HeaderMenuItem = ({ title }) => {
         onClick={() => {
           setActivePage(title);
         }}
-        href={`#${title}`}
+        href="#top"
         className={`header-nav-link ${activePage === title && "active"}`}
       >
         {title}

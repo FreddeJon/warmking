@@ -15,6 +15,10 @@ img {
   --orange-color: #dd9000;
   --fireorange-color: #ca5a0f;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: relative;
   /* background: url(../public/images/tobias-rademacher-wnF27F85ZKw-unsplash.jpg);
