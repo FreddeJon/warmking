@@ -1,8 +1,8 @@
 const newsData = [
   {
     id: 1,
-    title: "Nytt avtal",
-    date: "21/2 - 2022",
+    title: "Nytt avtal med Da Vinci",
+    date: "2022-03-11",
     spoiler:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates neque alias sit nostrum explicabo amet quaerat fugiat reiciendis, provident mollitia hic officia earum repellendus, cum autem adipisci nihil nesciunt.",
 
@@ -10,8 +10,8 @@ const newsData = [
   },
   {
     id: 2,
-    title: "Nya skor",
-    date: "24/12 - 2021",
+    title: "Nya skor av jultomten",
+    date: "2021-12-24",
     spoiler:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates neque alias sit nostrum explicabo amet quaerat fugiat reiciendis, provident mollitia hic officia earum repellendus, cum autem adipisci nihil nesciunt.",
 
@@ -19,8 +19,8 @@ const newsData = [
   },
   {
     id: 3,
-    title: "Någon fick sparken",
-    date: "12/7 - 2021",
+    title: "Jim Carrey avgår som vd för Warmking",
+    date: "2021-07-12",
     spoiler:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates neque alias sit nostrum explicabo amet quaerat fugiat reiciendis, provident mollitia hic officia earum repellendus, cum autem adipisci nihil nesciunt.",
 
@@ -29,7 +29,7 @@ const newsData = [
   {
     id: 4,
     title: "Ny superpump 800 grader",
-    date: "7/5 - 2021",
+    date: "2021-05-07",
     spoiler:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates neque alias sit nostrum explicabo amet quaerat fugiat reiciendis, provident mollitia hic officia earum repellendus, cum autem adipisci nihil nesciunt.",
 
@@ -38,7 +38,7 @@ const newsData = [
   {
     id: 5,
     title: "Kungen köper King Edition",
-    date: "11/2 - 2020",
+    date: "2020-02-11",
     spoiler:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates neque alias sit nostrum explicabo amet quaerat fugiat reiciendis, provident mollitia hic officia earum repellendus, cum autem adipisci nihil nesciunt.",
 
